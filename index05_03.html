@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise file 05_03 | Access and change elements</title>
+</head>
+<body>
+
+    <p><b><em>document.querySelector(".main-title").innerHTML</em></b> can be used to access the <b>innerHTML</b> property inside the element with class <b>main-title</b>.
+        <br>if it's a value, then it's directly returned.<br>
+        &hyphen; output&colon; <em>"Welcome to Moonwalk Manor"</em><br>
+    <b><em>document.querySelector(".main-title").outerHTML</em></b>, can be used to access the entire HTML property and in this case is the element. it includes the HTML wrapper itself.
+    <br> &hyphen; Output&colon; <em>"<h2 class="main-title">Welcome to Moonwalk Manor.</h2>"</em>
+    </p>
+
+    <p><h2>changing the value of properties[inner and outer HTML]</h2>
+    <em><b>document.querySelector(".main-title").innerHTML = "All your headings belong to us!"</b></em><br>
+    &hyphen; Output&colon; <em>"All your heaings belong to us!"</em>
+    </p>
+
+    <p>
+        <h3>Same can be achieved with id's</h3>
+        eg <em><b>document.querySelector("#showCase").id = "slideShow"</b></em>, hence the id in the <b>div</b> container is changed.
+    </p>
+
+    <p>
+        <h3>for 'class' has only 2 properties as below</h3>
+        <br>ie &hyphen; 1st is className
+        <br><b><em>document.querySelctor(".masthead")</em></b>
+        <br>&hyphen; output&colon; "&lt;head class="masthead clear">....&lt;/head&gt;"
+        
+        <br><h3>calling for the class name property</h3>
+        <br>ie <em><b>document.queySelctor(".masthead").className</b></em>
+        <br>&hyphen; output&colon; "masthead clear"
+        <br><h3>in case, we want to target these classes individually, we call the classList property</h3>
+        <br>eg document.querySelector(".masthead").classList
+        <br>&hyphen; output&colon; DOM Token list[2] "
+                                    [0]masthead<br>
+                                    [1]clear"
+        <br><h3>Accessing each individually</h3>
+        <br>ie <em><b>document.querySelector(".masthead").classList[1]</b></em>
+        <br>&hyphen; output&colon; "clear"
+    </p>
+    
+    <p>NB: <b>classList</b> is a readOnly property and hence can't be over written
+    <br>But we can use methods to effect our changes.
+    </p>
+</body>
+</html>

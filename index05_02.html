@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise file 05_02 | target elements in DOM using querySelctor methods</title>
+</head>
+<body>
+    
+    <marquee>querySelctor() method UseCase</marquee><hr><br>
+    <p><em><b>querySelctor() method</b></em> can be used to choose the <b>1st instance</b> or specific nodes of the DOM</p>
+    <p>eg <br>typing in console &gt; <strong>document.querySelctor(".masthead")</strong> &comma;
+        this looks for a node element with class <b>masthead</b></p>
+    <p>the same can  be done for id's i.e use <b><em>#masthead</em></b> inside the parantheses.</p>
+    <p>Now, using <em><b>document.querySelectorAll("a")</b></em> method, we shall obtain an <b>HTML</b> collection/ <b>node tree</b> of <b>anchor tag instances.</b>
+        <br>The same <em><b>querySelectorAll()</b></em> method, can be used to look out for elements used often in the document.
+    <br>WhereAs, <em><b>querySelctor()</b></em> method, is used to target specific elements as earlier above.</p>
+    <p><b><em>document.querySelector(".menu .has-children a")</em></b>, returns the <b>first link instance</b>.
+        <br> inside the element with the class <b>has-children</b>, inside an element with the class <b>menu</b>.
+    </p>
+
+    <p>
+        furthermore<br><b><em>document.querySelectorAll(".social-nav a[href*='linkedin.com']")</em></b>
+        can give us any link pointing to <b>linkedin</b> inside the element with a class <b>social-nav</b>.
+    </p>
+
+    <p>
+        <h3>Making numerous queries using different selectors separated by a comma</h3>
+        <b><em>document.querySelctorAll(".social-nav li a, .menu li a")</em></b>, returns all links inside the <b>li</b>, inside either in element with <b>class menu</b> or <b>social-nav</b>
+    </p>
+
+    <p>these methods can be used in areas where old methods eg getElementById()</p>
+</body>
+</html>
